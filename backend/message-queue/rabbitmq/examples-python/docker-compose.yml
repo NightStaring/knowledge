@@ -1,0 +1,27 @@
+# RabbitMQ 教学示例 - 环境配置
+#
+# 使用方式：
+#   docker-compose up -d
+#   pip install pika
+#   python 01_hello_world.py
+#
+# 管理界面：http://localhost:15672 (admin/admin123)
+
+version: '3.8'
+services:
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    container_name: rabbitmq-tutorial
+    ports:
+      - "5672:5672"    # AMQP 协议端口
+      - "15672:15672"  # 管理界面
+      - "1883:1883"    # MQTT 端口
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin123
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    restart: unless-stopped
+
+volumes:
+  rabbitmq-data:
