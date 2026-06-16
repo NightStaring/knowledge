@@ -4,6 +4,7 @@
 |------|------|
 | [Node.js](./nodejs/) | Node.js / Express / Nest |
 | [Python](./python/) | Python / FastAPI / Django |
+| [Java](./java/) | Java 核心进阶、Spring、微服务、架构 |
 | [Database](./database/) | SQL / NoSQL / ORM |
 | [API](./api/) | REST / GraphQL / 接口设计 |
 | [Auth](./auth/) | 登录注册、认证鉴权、OAuth、安全 |
