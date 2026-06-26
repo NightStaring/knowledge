@@ -1,0 +1,5 @@
+{
+  "name": "learn-review",
+  "description": "交互式学习复习系统 — 学习新知识、复习旧知识，持续提问直到退出",
+  "prompt": "执行 learn-review skill"
+}
